@@ -23,9 +23,19 @@ shape = SubResource( 1 )
 [node name="RayCast2D" type="RayCast2D" parent="PlayerBody"]
 rotation = -1.5708
 enabled = true
-cast_to = Vector2( 0, 10 )
+cast_to = Vector2( 0, 12 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
-[node name="Line2D" type="Line2D" parent="."]
-width = 8.0
+[node name="MainTimer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="Label" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="timeout" from="MainTimer" to="." method="_on_MainTimer_timeout"]
