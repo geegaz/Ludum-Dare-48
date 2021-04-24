@@ -6,6 +6,7 @@ class_name Enemy
 # var a = 2
 # var b = "text"
 
+var speed = 100
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -17,5 +18,5 @@ func _physics_process(_delta):
 	if(!get_node("RayCast2D").is_colliding()):
 		var velocity = Vector2()
 		velocity.x += 1
-		velocity = velocity.normalized() * 200
+		velocity = velocity.normalized() * speed
 		velocity = move_and_slide(velocity)
