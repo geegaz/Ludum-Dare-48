@@ -1,6 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Scenes/PillBug.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/PillBug.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Etage_1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/EnemySpawner.gd" type="Script" id=4]
 
@@ -22,3 +23,13 @@ curve = SubResource( 1 )
 
 [node name="MobSpawnLocation" type="PathFollow2D" parent="EnemySpawner/MobPath"]
 position = Vector2( 64, 64 )
+
+[node name="PlayerManager" parent="." instance=ExtResource( 1 )]
+STARTING_POINT = NodePath("StartPoint")
+
+[node name="StartPoint" type="Position2D" parent="PlayerManager"]
+position = Vector2( 136, 56 )
+
+[node name="MainTimer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
