@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/queue_mc.png-247a0853a28e05d5b5c7b775b609d2ed.stex"
+path="res://.import/mob_loot_placeholder.png-c9326162f08e73264c6a12ff64b7a329.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets graphiques/queue_mc.png"
-dest_files=[ "res://.import/queue_mc.png-247a0853a28e05d5b5c7b775b609d2ed.stex" ]
+source_file="res://assets graphiques/mob_loot_placeholder.png"
+dest_files=[ "res://.import/mob_loot_placeholder.png-c9326162f08e73264c6a12ff64b7a329.stex" ]
 
 [params]
 
