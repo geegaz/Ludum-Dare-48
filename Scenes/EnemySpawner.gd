@@ -7,15 +7,15 @@ var nbEnemies = 5
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$MobPath/MobSpawnLocation.offset = randi()
+	randomize()
 	for _i in range(5):
+		$MobPath/MobSpawnLocation.offset = randi()
 		var mob = Mob.instance()
 		add_child(mob)
-		var direction = $MobPath/MobSpawnLocation.rotation + PI / 2
 		mob.position = $MobPath/MobSpawnLocation.position
-		direction += rand_range(-PI / 4, PI / 4)
-		mob.rotation = direction
-	
+		var dirs = [Vector2.RIGHT, Vector2.UP, Vector2.LEFT, Vector2.DOWN]
+		mob.direction = dirs[randi() % dirs.size()]
+		mob.rotation = mob.direction.angle()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	pass
