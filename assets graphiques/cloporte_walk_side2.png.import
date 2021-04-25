@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/corps_mc.png-94f05561fbbaee455b9c055d185bde3b.stex"
+path="res://.import/cloporte_walk_side2.png-6910c88da32486a44469145519bdeda2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets graphiques/corps_mc.png"
-dest_files=[ "res://.import/corps_mc.png-94f05561fbbaee455b9c055d185bde3b.stex" ]
+source_file="res://assets graphiques/cloporte_walk_side2.png"
+dest_files=[ "res://.import/cloporte_walk_side2.png-6910c88da32486a44469145519bdeda2.stex" ]
 
 [params]
 

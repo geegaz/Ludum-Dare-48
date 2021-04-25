@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/corps_mc.png-94f05561fbbaee455b9c055d185bde3b.stex"
+path="res://.import/corps_mc_90°4.png-8029971481b1d56354da8b3dbb002cec.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets graphiques/corps_mc.png"
-dest_files=[ "res://.import/corps_mc.png-94f05561fbbaee455b9c055d185bde3b.stex" ]
+source_file="res://assets graphiques/corps_mc_90°4.png"
+dest_files=[ "res://.import/corps_mc_90°4.png-8029971481b1d56354da8b3dbb002cec.stex" ]
 
 [params]
 

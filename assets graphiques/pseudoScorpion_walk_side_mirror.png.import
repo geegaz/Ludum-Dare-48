@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/corps_mc.png-94f05561fbbaee455b9c055d185bde3b.stex"
+path="res://.import/pseudoScorpion_walk_side_mirror.png-4f12c3c5c96dfad3ae1db038eee8417e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets graphiques/corps_mc.png"
-dest_files=[ "res://.import/corps_mc.png-94f05561fbbaee455b9c055d185bde3b.stex" ]
+source_file="res://assets graphiques/pseudoScorpion_walk_side_mirror.png"
+dest_files=[ "res://.import/pseudoScorpion_walk_side_mirror.png-4f12c3c5c96dfad3ae1db038eee8417e.stex" ]
 
 [params]
 
