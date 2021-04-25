@@ -7,12 +7,13 @@
 
 [sub_resource type="Curve2D" id=1]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 64, 64, 0, 0, 0, 0, 768, 64, 0, 0, 0, 0, 768, 448, 0, 0, 0, 0, 64, 448, 0, 0, 0, 0, 64, 64 )
+"points": PoolVector2Array( 0, 0, 0, 0, 40, 40, 0, 0, 0, 0, 776, 40, 0, 0, 0, 0, 776, 472, 0, 0, 0, 0, 40, 472, 0, 0, 0, 0, 40, 40 )
 }
 
 [node name="Main" type="Node"]
 
 [node name="Node2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 0, 0 )
 
 [node name="EnemySpawner" type="Node" parent="."]
 script = ExtResource( 4 )
@@ -22,13 +23,13 @@ Mob = ExtResource( 2 )
 curve = SubResource( 1 )
 
 [node name="MobSpawnLocation" type="PathFollow2D" parent="EnemySpawner/MobPath"]
-position = Vector2( 64, 64 )
+position = Vector2( 40, 40 )
 
 [node name="PlayerManager" parent="." instance=ExtResource( 1 )]
 STARTING_POINT = NodePath("StartPoint")
 
 [node name="StartPoint" type="Position2D" parent="PlayerManager"]
-position = Vector2( 136, 56 )
+position = Vector2( 40, 40 )
 
 [node name="MainTimer" type="Timer" parent="."]
 wait_time = 0.5
