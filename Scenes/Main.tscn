@@ -12,7 +12,7 @@ _data = {
 
 [node name="Main" type="Node"]
 
-[node name="Node2D" parent="." instance=ExtResource( 3 )]
+[node name="Main_Scene" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0, 0 )
 
 [node name="EnemySpawner" type="Node" parent="."]
@@ -34,3 +34,5 @@ position = Vector2( 40, 40 )
 [node name="MainTimer" type="Timer" parent="."]
 wait_time = 0.5
 autostart = true
+
+[node name="PowerupSpawner" type="Node" parent="."]
