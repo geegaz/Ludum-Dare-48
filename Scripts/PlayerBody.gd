@@ -36,7 +36,6 @@ func move():
 	if can_move:
 		add_part(position, rotation)
 		remove_part(-1)
-		print(worm_size)
 		
 		position += last_dir*manager.CELLSIZE
 		

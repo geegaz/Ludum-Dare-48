@@ -19,7 +19,7 @@ func _ready():
 	
 	if START_SIZE > 0:
 		for i in range(START_SIZE):
-			_Player.add_part(_Player.position- Vector2.RIGHT*(i+1)*CELLSIZE, 0)
+			_Player.add_part(_Player.position - Vector2.RIGHT*(i+1)*CELLSIZE, 0)
 	
 
 func _on_MainTimer_timeout():
