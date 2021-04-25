@@ -21,12 +21,17 @@ func _physics_process(delta):
 func _input(event):
 	if event.is_action_pressed("ui_right"):
 		new_dir = Vector2.RIGHT
+	
 	if event.is_action_pressed("ui_left"):
 		new_dir = Vector2.LEFT
+	
 	if event.is_action_pressed("ui_up"):
 		new_dir = Vector2.UP
+	
 	if event.is_action_pressed("ui_down"):
 		new_dir = Vector2.DOWN
+	
+	
 	
 	if is_zero_approx(last_dir.dot(new_dir)):
 		last_dir = new_dir
@@ -36,6 +41,7 @@ func move():
 	if can_move:
 		add_part(position, rotation)
 		remove_part(-1)
+		
 		
 		position += last_dir*manager.CELLSIZE
 		
@@ -51,7 +57,7 @@ func add_part(pos: Vector2, rot: float):
 	worm_size += 1
 
 func remove_part(i: int):
-	var old_part = parts.pop_back()
+	var old_part = parts.pop_front()
 	old_part.queue_free()
 	
 	worm_size -= 1
